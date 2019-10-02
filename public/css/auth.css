@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.svg");
+  src: url("../fonts/Roboto-Regular.woff");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.svg");
+  src: url("../fonts/Roboto-Medium.woff");
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  background-image: url(../images/cayxanh.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opacity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  opacity: 0.5;
+  background-color: #111;
+}
+
+.auth {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+.auth .card {
+  background-color: rgba(255, 250, 250, 0.95);
+}
+.auth .card .card-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  text-shadow: 8px 8px 10px #fff;
+  border-bottom: 1px solid #99c95c;
+}
+.auth .card .card-header .logo {
+  font-size: 20px;
+}
+.auth .card .card-header .logo img {
+  width: 200px;
+}
+.auth .card .card-header .facebook {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+}
+.auth .card .card-header .facebook .btn {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Roboto-Medium;
+}
+.auth .card .card-header .facebook .btn-success:focus, .auth .card .card-header .facebook .btn-danger:focus {
+  box-shadow: none;
+}
+.auth .card .card-body .text-md-right {
+  font-size: 15px;
+}
+.auth .card .card-body .text-md-right i {
+  color: red;
+  margin-right: 5px;
+}
+.auth .card .card-body .text-add-infor {
+  color: #a19e9e;
+  font-style: italic;
+}
+.auth .card .card-body .form-control {
+  border: 1px solid #99c95c;
+  box-shadow: 0.5px 0.5px 1px #99c95c;
+}
+.auth .card .card-body .form-control:focus {
+  box-shadow: 1px 1px 5px #99c95c;
+}
+.auth .card .card-body .btn-submit {
+  background-color: #99c95c;
+  color: #fff;
+  font-family: Roboto-Medium;
+  font-weight: 500;
+  margin-right: 30px;
+}
+.auth .card .card-body .btn-submit:hover {
+  background-color: #97d644;
+  box-shadow: 1px 1px 5px #99c95c;
+}
+.auth .card .card-body .btn-link {
+  color: #111;
+}
+.auth .card .card-body .btn-link:hover {
+  color: #99c95c;
+}
+.auth .card .card-header .btn-link {
+  color: #111;
+}
+.auth .card .card-header .btn-link:hover {
+  color: #99c95c;
+}

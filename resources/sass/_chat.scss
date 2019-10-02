@@ -1,0 +1,175 @@
+.chat-support {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    z-index: 1;
+    .chat-button, .chat-button-link {
+        position: relative;
+        i {
+            font-size: 50px;
+            color: #7cb533;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px #7cb533;
+            background-color: #fff;
+            opacity: 0.5;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        span {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            font-size: 14px;
+            padding: 2px 8px;
+            background-color: red;
+            color: #fff;
+            border-radius: 10px;
+        }
+    }
+    .card {
+        display: none;
+        width: 300px;
+        border: 1px solid $green;
+        box-shadow: 1px 1px 5px $green;
+        .card-header {
+            background-color: #f7f8fa;
+            img {
+                width: 35px;
+                height: 35px;
+                border-radius: 35px;
+                border: 1px solid $green;
+            }
+            span {
+                @extend %font-medium;
+                margin-left: 10px;
+            }
+        }
+        .card-body {
+            height: 250px;
+            overflow-y: auto;
+            padding: 8px;
+            position: relative;
+            .chat {
+                li {
+                    margin-bottom: 5px;
+                }
+                .left {
+                    .admin {
+                        width: 80%;
+                        display: flex;
+                        .text-message {
+                            .text {
+                                background-color: #f7f8fa;
+                                color: #111;
+                                border-radius: 10px;
+                                padding: 3px 5px;
+                                display: inline-block;
+                            }
+                            .date-message {
+                                color: #c0bdbd;
+                                font-size: 11px;
+                            }
+                        }
+                        .avatar {
+                            img {
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 25px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    display: flex;
+                    justify-content: flex-end;
+                    .customer {
+                        width: 80%;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .text-message {
+                            .text {
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                .message {
+                                    background-color: $green;
+                                    color: #fff;
+                                    border-radius: 10px;
+                                    padding: 3px 5px;
+                                }
+                                .delete {
+                                    margin-right: 5px;
+                                    opacity: 0;
+                                    i {
+                                        color: #c0bdbd;
+                                        &:hover {
+                                            color: $green;
+                                        }
+                                    }
+                                }
+                            }
+                            .date-message {
+                                clear: both;
+                                color: #c0bdbd;
+                                font-size: 11px;
+                            }
+                        }
+                        .avatar {
+                            img {
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 25px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .loader {
+                text-align: center;
+                border: 3px solid #fff;
+                border-radius: 50%;
+                border-top: 1px solid #99c95c;
+                border-right: 2px solid #99c95c;
+                border-bottom: 4px solid #99c95c;
+                width: 25px;
+                height: 25px;
+                -webkit-animation: spin 1s linear infinite;
+                animation: spin 1s linear infinite;
+                margin: auto;
+                margin-bottom: 5px;
+            }
+            @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            
+        }
+        .card-footer {
+            padding: 0;
+            #btn-input {
+                border: none;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        .exit {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            color: red;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
