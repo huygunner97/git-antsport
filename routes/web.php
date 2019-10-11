@@ -136,7 +136,7 @@ Route::get('cart/{cart_number}/{cart_price}/{id}/{number}', 'AjaxController@getC
 
 Route::group(['prefix' => 'thanh-toan'], function() {
 	Route::get('', 'ExtraController@getCheckout')->middleware('auth');
-	Route::post('', 'ExtraController@postCheckout')->name('checkout');	
+	Route::post('', 'ExtraController@postCheckout')->name('checkout');
 });
 
 Route::group(['prefix' => 'comments'], function() {
@@ -174,3 +174,4 @@ Route::get('auth/facebook', 'Auth\FacebookController@redirectToFacebook');
 Route::get('auth/facebook/callback', 'Auth\FacebookController@handleFacebookCallback');
 
 Route::get('test', 'TestController@test');
+Route::get('abc', 'TestController@test');
