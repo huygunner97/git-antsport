@@ -175,5 +175,3 @@ Route::get('auth/facebook/callback', 'Auth\FacebookController@handleFacebookCall
 
 Route::get('test', 'TestController@test');
 Route::get('abc', 'TestController@test');
-
-//ksfpk
